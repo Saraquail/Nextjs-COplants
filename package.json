@@ -1,0 +1,22 @@
+{
+  "name": "co_plants",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.0.0-canary.166",
+    "react": "^19.0.0-rc-04bd67a4-20240924",
+    "react-dom": "^19.0.0-rc-04bd67a4-20240924"
+  },
+  "devDependencies": {
+    "@types/node": "22.6.1",
+    "@types/react": "18.3.9",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
+  }
+}

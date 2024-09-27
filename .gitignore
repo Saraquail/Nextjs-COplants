@@ -1,0 +1,7 @@
+node_modules
+src/pages
+src/data.js
+jsconfig.json
+tsconfig.json
+migrations
+seeds
