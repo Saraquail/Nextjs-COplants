@@ -1,7 +1,8 @@
 node_modules
-src/pages
+.next/server/pages/api
 src/data.js
 jsconfig.json
 tsconfig.json
-migrations
-seeds
+.vercel
+.env.development.local
+lib

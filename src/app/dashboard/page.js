@@ -1,22 +1,22 @@
 "use client";
 import styles from "../page.module.css";
 import { useState, useEffect } from "react";
-import  plantData  from "../../data";
+import  { plants }  from "../lib/data";
 
 
 export default function Page() {
   const [results, setResults] = useState(null);
 
-  // useEffect(() => {
-    
-  // }, []);
-
+  useEffect(() => {
+    getPlants();
+  }, []);
 
 const getPlants = () => {
-  let data = plantData;
-  // let data = await res.json();
-  console.log('lsflsj')
-  setResults(data);
+  let data = plants;
+  if (data) {
+    setResults(data);
+  }
+  console.log({data})
   return
 }
 
@@ -24,13 +24,8 @@ const getPlants = () => {
     <main className={styles.main}>
       <span className={styles.description}> Welcome to the dashboard </span>
       <div className={styles.description}>
-        <form 
-        // action="/search"
-        >
-          <input 
-          // name="query" 
-
-          />
+        <form>
+          <input type="text"  placeholder="Search..." onChange={getPlants()}  />
           <button type="submit" onClick={getPlants()}>Submit</button>
         </form>
       </div>
